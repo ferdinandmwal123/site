@@ -1,4 +1,4 @@
-.xp-header {
+/* .xp-header {
     display: flex;
     align-items: center;
     padding: 30px;
@@ -9,11 +9,54 @@
     font-size: 1.25rem;
   }
   .xp-header button {
-    margin-left: auto; /* Pushes the button to the right */
+    margin-left: auto; 
     cursor: pointer;
     margin-right: 20%;
     transform: scale(1.2);
+  } */
+  .xp-header {
+    position: fixed;  /* Optional: keeps header fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;        /* Remove any default margin */
+    padding: 10px 20px;  /* Adjust padding as needed */
+    background: #e0e0e0;
+    border-bottom: 2px solid #c0c0c0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;    /* Ensure it stays on top */
   }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Evenly space title and button */
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Pixelated MS Sans Serif", Arial;
+  }
+  
+  .xp-header button {
+    cursor: pointer;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;            /* Slightly larger text */
+    padding: 8px 16px;          /* Increased padding for a bigger button */
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+    box-shadow: none;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+  }
+  
+  .xp-header button:hover {
+    /* A subtle hover effect, feel free to tweak */
+    background: linear-gradient(180deg, #ecebe5, #d8d0c4, #fff);
+  }
+  
 
   .window {
     width: 40%; /* Adjust width */
