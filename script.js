@@ -184,6 +184,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         var button = document.getElementById("releaseBalloons");
         button === null || button === void 0 ? void 0 : button.addEventListener("click", function () {
+            delay(1000); //delay of doom
             balloons();
         });
     });

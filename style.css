@@ -1,0 +1,27 @@
+.xp-header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .xp-header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  .xp-header button {
+    margin-left: auto; /* Pushes the button to the right */
+    cursor: pointer;
+    margin-right: 20%;
+    transform: scale(1.2);
+  }
+
+  .window {
+    width: 40%; /* Adjust width */
+    margin: auto; /* Center the window horizontally */
+    margin-top: 15%; /* Center the window vertically with some top spacing */
+    margin-left: 40%;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content inside window */
+    text-align: center; /* Optional, for aligning text */
+  }
+  
