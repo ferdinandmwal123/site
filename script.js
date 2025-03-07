@@ -199,7 +199,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
       
-        var button = document.getElementById("releastBalloonsButton");
+        var button = document.getElementById("specialButton");
         button === null || button === void 0 ? void 0 : button.addEventListener("click", function () {
             balloons();
         });
