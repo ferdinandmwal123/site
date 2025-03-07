@@ -18,10 +18,47 @@
   .window {
     width: 40%; /* Adjust width */
     margin: auto; /* Center the window horizontally */
-    margin-top: 15%; /* Center the window vertically with some top spacing */
-    margin-left: 40%;
+    margin-left: 10%;
     flex-direction: column; /* Align content vertically */
     justify-content: center; /* Center content inside window */
     text-align: center; /* Optional, for aligning text */
   }
+
+  .window-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+  }
   
+.side-image{
+  max-width: 16%;
+  object-fit: contain;
+  margin-left: 15%;
+   /* Keeps image proportionate */
+ 
+}
+
+
+
+ /* Footer */
+ .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Ensures it starts from the left edge */
+  width: 100%; /* Makes it span the full width */
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
