@@ -898,7 +898,7 @@ button {
   border-radius: 5px
 }
 
-#specialButton{
+button[data-type="special"]{
 font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
@@ -906,8 +906,10 @@ font-family: "Pixelated MS Sans Serif", Arial;
   background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
   box-shadow: none;
   padding: 12px 24px;
-  border-radius: 5px
+  border-radius: 9px;
+  cursor: pointer;
 }
+
 
 button:not(:disabled).active,
 button:not(:disabled):active {
@@ -927,6 +929,24 @@ button:focus {
 button::-moz-focus-inner {
   border: 0
 }
+/* #specialButton:not(:disabled).active,
+#specialButton:not(:disabled):active {
+  box-shadow: none;
+  background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1)
+}
+
+#specialButton:not(:disabled):hover {
+  box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a
+}
+
+#specialButton.focused,
+#specialButton:focus {
+  box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4, inset 2px -2px #89ade4
+}
+
+#specialButton::-moz-focus-inner {
+  border: 0
+} */
 
 input,
 label,
